@@ -1,14 +1,15 @@
-import Link from "next/link";
 import classes from "./PageNav.module.css";
+import NavLink from "../NavLink/NavLink";
+
 function PageNav() {
   return (
     <nav className={classes.nav}>
       <ul>
         <li>
-          <Link href="/meals">Browse Meals</Link>
+          <NavLink href="/meals">Browse Meals</NavLink>
         </li>
         <li>
-          <Link href="/community">Foodies Community</Link>
+          <NavLink href="/community">Foodies Community</NavLink>
         </li>
       </ul>
     </nav>
